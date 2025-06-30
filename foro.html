@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>🕹️ Foro Retro - ROUSOFT</title>
+  <style>
+    /* FUENTES */
+    @import url('https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap');
+
+    /* ESTILO GENERAL */
+    body {
+      margin: 0;
+      background-color: #000000;
+      color: #d08fff;
+      font-family: 'Share Tech Mono', monospace;
+      animation: fondoBrillante 10s infinite alternate;
+    }
+
+    @keyframes fondoBrillante {
+      0% { background-color: #000000; }
+      100% { background-color: #0a0014; }
+    }
+
+    header {
+      padding: 30px;
+      text-align: center;
+      background-color: #0a0014;
+      border-bottom: 2px solid #d08fff;
+      box-shadow: 0 0 15px #d08fff;
+    }
+
+    header h1 {
+      font-size: 28px;
+      margin: 0;
+      color: #e06fff;
+      text-shadow: 0 0 5px #d08fff;
+      animation: brillar 2s infinite alternate;
+    }
+
+    @keyframes brillar {
+      from { text-shadow: 0 0 5px #d08fff; }
+      to { text-shadow: 0 0 20px #ff00ff; }
+    }
+
+    .container {
+      max-width: 900px;
+      margin: 40px auto;
+      padding: 20px;
+      background-color: #0a0014;
+      border: 2px solid #d08fff;
+      box-shadow: 0 0 20px #d08fff33;
+      border-radius: 10px;
+    }
+
+    .post {
+      background-color: #100018;
+      border: 1px solid #d08fff;
+      margin-bottom: 30px;
+      padding: 15px;
+      box-shadow: 0 0 10px #d08fff55;
+      border-radius: 6px;
+      animation: bordeAnimado 5s infinite alternate;
+    }
+
+    @keyframes bordeAnimado {
+      0% { border-color: #d08fff; }
+      100% { border-color: #ff00ff; }
+    }
+
+    .post h2 {
+      font-size: 20px;
+      margin-top: 0;
+      color: #ff99ff;
+      text-decoration: underline;
+    }
+
+    .post p {
+      font-size: 15px;
+      line-height: 1.6;
+    }
+
+    .meta {
+      font-size: 13px;
+      color: #999;
+      margin-bottom: 10px;
+    }
+
+    .post img {
+      max-width: 100%;
+      border: 2px solid #d08fff;
+      border-radius: 4px;
+      margin: 10px 0;
+    }
+
+    .post iframe {
+      width: 100%;
+      height: 300px;
+      border: none;
+      margin-top: 10px;
+      border: 2px solid #ff00ff;
+    }
+
+    .comments {
+      margin-top: 15px;
+      padding-top: 10px;
+      border-top: 1px dashed #aa66ff;
+    }
+
+    .comment {
+      font-size: 14px;
+      color: #cfa0ff;
+      margin-bottom: 10px;
+      padding-left: 10px;
+      border-left: 2px solid #aa66ff;
+    }
+
+    a {
+      color: #ff66ff;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    footer {
+      text-align: center;
+      color: #666;
+      font-size: 12px;
+      padding: 30px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>💜 Foro - ROUSOFT</h1>
+  </header>
+
+  <div class="container">
+
+    <!-- POST 1 -->
+    <div class="post">
+      <div class="meta">📅 30 de junio, 2025 | 🚀 Publicación oficial</div>
+      <h2>🔮 ROULA - IDE 0.1.7 MUY PRONTO</h2>
+      <p>La primera versión estable del IDE para ROULANG será liberada en unos cuantos días... Un IDE simple, rápido y perfecto para explorar el nuevo lenguaje de programación que define el futuro.</p>
+      <img src="roula-ide-preview.jpg" alt="Preview de ROULA IDE">
+      <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" allowfullscreen></iframe>
+      <p>📂 Repositorio en <a href="https://github.com/Roussel19/rousoft-site">GitHub</a>.</p>
+    </div>
+  </div>
+
+  <footer>
+    🛸 Foro de avances creado por ROUSOFT | Ciberpunk Retro Edition © 2025
+  </footer>
+
+</body>
+</html>
