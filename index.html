@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>ROUSOFT | Revolución Tecnológica</title>
+  <style>
+    :root {
+      --bg: #000000;
+      --fg: #ffffff;
+      --neon: #c800ff;
+      --panel: #0a0a0a;
+      --hover: #ff00ff;
+      --font-main: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html, body {
+      height: 100%;
+    }
+
+    body {
+      font-family: var(--font-main);
+      background-color: var(--bg);
+      color: var(--fg);
+      overflow-x: hidden;
+      position: relative;
+    }
+
+    #particles-js {
+      position: fixed;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+    }
+
+    header {
+      background: var(--panel);
+      padding: 20px;
+      border-bottom: 2px solid var(--neon);
+      text-align: center;
+      box-shadow: 0 0 20px var(--neon);
+    }
+
+    header h1 {
+      font-size: 2.8rem;
+      color: var(--neon);
+      text-shadow: 0 0 10px var(--neon);
+    }
+
+    nav {
+      margin-top: 15px;
+    }
+
+    nav a {
+      color: var(--fg);
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: var(--neon);
+    }
+
+    .container {
+      max-width: 1000px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+
+    section {
+      display: none;
+      animation: fadeIn 0.5s ease-in-out;
+      background-color: var(--panel);
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 0 20px var(--neon);
+    }
+
+    section.active {
+      display: block;
+    }
+
+    h2 {
+      color: var(--neon);
+      margin-bottom: 20px;
+      font-size: 2rem;
+      text-shadow: 0 0 8px var(--neon);
+    }
+
+    p, li {
+      margin-bottom: 15px;
+      line-height: 1.6;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 12px 20px;
+      background: var(--neon);
+      color: #fff;
+      border: none;
+      border-radius: 8px;
+      font-weight: bold;
+      text-decoration: none;
+      transition: background 0.3s, transform 0.3s;
+      margin-top: 15px;
+      margin-right: 10px;
+    }
+
+    .btn:hover {
+      background: var(--hover);
+      transform: scale(1.05);
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      margin-top: 40px;
+      background-color: var(--panel);
+      border-top: 1px solid var(--neon);
+      color: #888;
+    }
+
+    @keyframes fadeIn {
+      from {opacity: 0;}
+      to {opacity: 1;}
+    }
+
+    @media (max-width: 768px) {
+      header h1 {
+        font-size: 2rem;
+      }
+
+      nav a {
+        display: block;
+        margin: 10px 0;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div id="particles-js"></div>
+  <header>
+    <h1>ROUSOFT</h1>
+    <nav>
+      <a href="#" onclick="showSection('inicio')">Inicio</a>
+      <a href="#" onclick="showSection('proyectos')">Proyectos</a>
+      <a href="#" onclick="showSection('descargas')">Descargas</a>
+      <a href="#" onclick="showSection('donaciones')">Donar</a>
+      <a href="#" onclick="showSection('redes')">Redes</a>
+    </nav>
+  </header>
+
+  <div class="container">
+    <section id="inicio" class="active">
+      <h2>Bienvenido a ROUSOFT</h2>
+      <p>ROUSOFT es más que una empresa. Es un manifiesto digital. Nace del corazón y la mente de <strong>Brayan Roussel</strong> como un acto de creación libre, independiente y valiente. En un mundo dominado por software sin alma, aquí estamos para romper el molde.</p>
+      <p>Construimos herramientas con propósito, con emoción, con visión. Aquí no hay inversores ni cadenas, sólo ideas puras que nacen para resonar con quienes se atreven a pensar distinto.</p>
+      <p>Si alguna vez soñaste con programar sin traducir tu mente al inglés, si alguna vez quisiste escribir código con sentimiento, entonces este es tu lugar. Bienvenido al futuro. Bienvenido a ROUSOFT.</p>
+    </section>
+
+    <section id="proyectos">
+      <h2>⚙️ Proyectos</h2>
+      <ul>
+        <li><strong>ROULANG 1.0:</strong> Un lenguaje de programación interpretado, escrito en Rust, totalmente en español. Es mi forma de explorar, aprender, y ver si el código puede hablar como nosotros.</li>
+        <li><strong>ROULA - IDE 1.0:</strong> El entorno de desarrollo oficial. Hecho a medida para ROULANG y todo lo que esté por venir. Elegante, oscuro, intuitivo. Una nave espacial para tu mente creativa.</li>
+      </ul>
+    </section>
+
+    <section id="descargas">
+      <h2>⬇️ Descargas</h2>
+      <h3>🔤 ROULANG 1.0</h3>
+      <p>No es solo un lenguaje. Es una declaración. ROULANG es un experimento personal nacido de la curiosidad, la rebeldía y el deseo de pensar en código usando nuestras propias palabras. Aún en desarrollo, pero con un propósito firme: mostrar que el software también puede sentirse humano.</p>
+      <a class="btn" href="#">(Próximamente)</a>
+      <a class="btn" href="#">Documentación</a>
+
+      <h3 style="margin-top: 40px;">🖥️ ROULA - IDE 1.0</h3>
+      <p>Este no es solo un editor de texto. Es el centro de mando de todo lo que nacerá en ROUSOFT. ROULA - IDE 1.0 es el hogar digital de los creadores del futuro: oscuro, afilado, neónico. Cada línea de código que escribas en él tendrá estilo, presencia, y potencia.</p>
+      <p>Es el primero de muchos. El más importante. Y hoy puedes ser de los primeros en usarlo.</p>
+      <a class="btn" href="https://tuservidor.com/roula-ide.zip">Descargar ROULA - IDE</a>
+    </section>
+
+    <section id="donaciones">
+      <h2>❤️ Apóyanos</h2>
+      <p>Si te inspira lo que estamos creando en ROUSOFT y quieres ayudar a que siga creciendo, puedes colaborar con una donación. Cada aporte impulsa este viaje independiente.</p>
+      <a class="btn" href="https://www.paypal.com/paypalme/tuusuario" target="_blank">Donar con PayPal</a>
+      <a class="btn" href="https://ko-fi.com/tuusuario" target="_blank">Donar con Ko-fi</a>
+      <a class="btn" href="https://buymeacoffee.com/tuusuario" target="_blank">Buy Me a Coffee</a>
+    </section>
+
+    <section id="redes">
+      <h2>🌐 Redes</h2>
+      <p>Sólo estamos comenzando. Pero las ideas grandes nacen pequeñas, y crecen con comunidad. Únete, comparte, comenta. Hagamos que el código hable en neón.</p>
+      <ul>
+        <li><a class="btn" href="https://twitter.com/rousoft" target="_blank">Twitter/X</a></li>
+        <li><a class="btn" href="https://github.com/rousoft" target="_blank">GitHub</a></li>
+        <li><a class="btn" href="https://linkedin.com/company/rousoft" target="_blank">LinkedIn</a></li>
+      </ul>
+    </section>
+  </div>
+
+  <footer>
+    &copy; 2025 ROUSOFT. Una visión creada por Brayan Roussel.
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/particles.js"></script>
+  <script>
+    function showSection(id) {
+      const sections = document.querySelectorAll('section');
+      sections.forEach(sec => sec.classList.remove('active'));
+      document.getElementById(id).classList.add('active');
+    }
+
+    particlesJS("particles-js", {
+      particles: {
+        number: { value: 80 },
+        color: { value: "#c800ff" },
+        shape: { type: "circle" },
+        opacity: { value: 0.5 },
+        size: { value: 3 },
+        line_linked: {
+          enable: true,
+          distance: 150,
+          color: "#c800ff",
+          opacity: 0.4,
+          width: 1
+        },
+        move: { enable: true, speed: 2 }
+      },
+      interactivity: {
+        detect_on: "canvas",
+        events: {
+          onhover: { enable: true, mode: "repulse" },
+          onclick: { enable: true, mode: "push" }
+        },
+        modes: {
+          repulse: { distance: 100 },
+          push: { particles_nb: 4 }
+        }
+      },
+      retina_detect: true
+    });
+  </script>
+</body>
+</html>
